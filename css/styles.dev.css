@@ -234,19 +234,22 @@ table {
   text-align: center;
 }
 
-.second {
-  animation: 1s hand-move infinite linear;
-  transform-origin: 50% 50%;
-}
+.clock-face:hover {
 
-.minute {
-  animation: 60s hand-move infinite linear;
-  transform-origin: 50% 50%;
-}
+  .second {
+    animation: 1s hand-move infinite linear;
+    transform-origin: 50% 50%;
+  }
 
-.hour {
-  animation: 864s hand-move infinite linear;
-  transform-origin: 50% 50%;
+  .minute {
+    animation: 60s hand-move infinite linear;
+    transform-origin: 50% 50%;
+  }
+
+  .hour {
+    animation: 864s hand-move infinite linear;
+    transform-origin: 50% 50%;
+  }
 }
 
 @keyframes hand-move {

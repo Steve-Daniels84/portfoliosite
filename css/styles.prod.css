@@ -5,15 +5,15 @@
 * Browsers: last 4 version
 */
 
-/* Dont forget to push new styles through this process: 
-copy/paste into PostCSS https://madlittlemods.github.io/postcss-css-variables/playground/ 
+/* Dont forget to push new styles through this process:
+copy/paste into PostCSS https://madlittlemods.github.io/postcss-css-variables/playground/
 use the output of that in Autoprefixer https://autoprefixer.github.io/
 then save that output of that to /css/styles.prod.css
 */
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -28,8 +28,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: #7a777035;
 }
 
@@ -49,16 +49,17 @@ footer {
   padding: 10px;
 }
 
-.header__logo-container, nav {
+.header__logo-container,
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header__logo-container {
@@ -85,7 +86,7 @@ nav li {
 }
 
 h1 {
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
 
@@ -101,8 +102,9 @@ a:hover {
   text-decoration: underline;
 }
 
-main, footer {
-  font-family: "Montserrat",sans-serif;
+main,
+footer {
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 12px;
 }
@@ -112,7 +114,7 @@ main, footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   margin-top: 25px;
 }
 
@@ -122,8 +124,8 @@ main, footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 10px;
   border: 2px solid black;
   border-radius: 15px;
@@ -154,7 +156,7 @@ button {
 .button {
   font-size: 16px;
   text-decoration: none;
-  padding: 5px ;
+  padding: 5px;
 }
 
 button:hover {
@@ -207,28 +209,26 @@ button:focus {
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px
+  grid-gap: 20px;
 }
 
 .work__grid--item {
   background-color: #7a777035;
   padding: 5px;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   -webkit-transition: -webkit-box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   -o-transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .work__grid--item:hover {
   background-color: rgba(115, 46, 129, 0.242);
-  -webkit-box-shadow: 4px 3px 19px 0px rgba(0,0,0,0.3);
-          box-shadow: 4px 3px 19px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 4px 3px 19px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 3px 19px 0 rgba(0, 0, 0, 0.3);
   -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
   cursor: pointer;
 }
 
@@ -239,8 +239,8 @@ button:focus {
 .work__grid--item img {
   width: 100%;
   height: 150px;
-  -o-object-fit:cover;
-     object-fit:cover;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .work__grid-item-link {
@@ -252,11 +252,11 @@ button:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 #checkout-code-link {
@@ -297,6 +297,7 @@ table {
 .main__cv-download-button {
   text-align: center;
 }
+
 .clock-container {
   width: 100%;
   margin: 0 auto;
@@ -305,56 +306,58 @@ table {
 }
 
 .clock-face:hover {
-
+  
   .second {
     -webkit-animation: 1s hand-move infinite linear;
-            animation: 1s hand-move infinite linear;
+    animation: 1s hand-move infinite linear;
     -webkit-transform-origin: 50% 50%;
-        -ms-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
   }
 
   .minute {
     -webkit-animation: 60s hand-move infinite linear;
-            animation: 60s hand-move infinite linear;
+    animation: 60s hand-move infinite linear;
     -webkit-transform-origin: 50% 50%;
-        -ms-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
   }
 
   .hour {
     -webkit-animation: 864s hand-move infinite linear;
-            animation: 864s hand-move infinite linear;
+    animation: 864s hand-move infinite linear;
     -webkit-transform-origin: 50% 50%;
-        -ms-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
   }
 }
 
 @-webkit-keyframes hand-move {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(365deg);
-            transform: rotate(365deg);
+    transform: rotate(365deg);
   }
 }
 
 @keyframes hand-move {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(365deg);
-            transform: rotate(365deg);
+    transform: rotate(365deg);
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 480px){
-    main {
+@media screen and (min-width: 0) and (max-width: 480px) {
+  main {
     width: 90%;
   }
 
@@ -374,10 +377,10 @@ table {
 
   .profile__image-container {
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
   }
 
   .profile-detail {

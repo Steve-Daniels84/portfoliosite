@@ -5,6 +5,12 @@
 * Browsers: last 4 version
 */
 
+/* Dont forget to push new styles through this process: 
+copy/paste into PostCSS https://madlittlemods.github.io/postcss-css-variables/playground/ 
+use the output of that in Autoprefixer https://autoprefixer.github.io/
+then save that output of that to /css/styles.prod.css
+*/
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -298,28 +304,31 @@ table {
   text-align: center;
 }
 
-.second {
-  -webkit-animation: 1s hand-move infinite linear;
-          animation: 1s hand-move infinite linear;
-  -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-}
+.clock-face:hover {
 
-.minute {
-  -webkit-animation: 60s hand-move infinite linear;
-          animation: 60s hand-move infinite linear;
-  -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-}
+  .second {
+    -webkit-animation: 1s hand-move infinite linear;
+            animation: 1s hand-move infinite linear;
+    -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
 
-.hour {
-  -webkit-animation: 864s hand-move infinite linear;
-          animation: 864s hand-move infinite linear;
-  -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+  .minute {
+    -webkit-animation: 60s hand-move infinite linear;
+            animation: 60s hand-move infinite linear;
+    -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+
+  .hour {
+    -webkit-animation: 864s hand-move infinite linear;
+            animation: 864s hand-move infinite linear;
+    -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
 }
 
 @-webkit-keyframes hand-move {

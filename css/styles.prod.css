@@ -230,9 +230,6 @@ button:focus {
   cursor: pointer;
 }
 
-.work__grid--item:active {
-  scale: 0.9;
-}
 
 .work__grid--item img {
   width: 100%;
